@@ -6,7 +6,6 @@
   "types": "index.d.ts",
   "scripts": {
     "test": "standard && mocha",
-    "install": "prebuild-install || node-gyp rebuild",
     "prebuild-node": "prebuild -t 8.9.0 -t 9.4.0 -t 10.11.0 -t 11.9.0 -t 12.0.0 -t 14.0.0 --strip",
     "prebuild-node-ia32": "prebuild -t 8.9.0 -t 9.4.0 -a ia32 --strip",
     "prebuild-electron": "prebuild -t 4.0.4 -t 5.0.0 -t 6.0.0 -t 7.0.0 -t 8.0.0 -t 9.0.0 -r electron --strip",
@@ -23,7 +22,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/fs-admin.git"
+    "url": "https://github.com/builtbygio/fs-admin.git"
   },
   "bugs": {
     "url": "https://github.com/atom/fs-admin/issues"
@@ -46,5 +45,8 @@
       "describe",
       "it"
     ]
+  },
+  "engines": {
+    "chevron": "*"
   }
 }
