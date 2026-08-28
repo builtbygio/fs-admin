@@ -33,7 +33,7 @@ AuthorizationRef GetAuthorizationRef() {
   return authorization_ref;
 }
 
-void ClearAuthorizationCacheImpl() {
+void ClearAuthorizationCache() {
   if (authorization_ref) {
     AuthorizationFree(authorization_ref, kAuthorizationFlagDefaults);
     authorization_ref = nullptr;
