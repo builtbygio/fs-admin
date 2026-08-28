@@ -8,7 +8,7 @@ namespace fs_admin {
 
 std::string CreateAuthorizationForm();
 
-void ClearAuthorizationCacheImpl();
+void ClearAuthorizationCache();
 
 void *StartChildProcess(const std::string &command, const std::vector<std::string> &args, bool test_mode);
 
